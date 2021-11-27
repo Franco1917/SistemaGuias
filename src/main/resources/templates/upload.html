@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>Ejemplo de carga del archivo Spring Boot</h1>
+<form th:method="POST" th:action="@{/upload/file}" enctype="multipart/form-data">
+  <input type="file" name="file" /><br/><br/>
+  <input type="submit" value="Subir" />
+</form>
+</body>
+</html>
